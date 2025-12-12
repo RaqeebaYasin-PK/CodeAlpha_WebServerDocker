@@ -5,10 +5,10 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Copy package.json first (for dependency install)
-COPY package.json ./
+COPY package*.json ./
 
 # Install dependencies
-RUN npm install --production
+RUN npm install
 
 # Copy application code
 COPY . .
@@ -17,4 +17,10 @@ COPY . .
 EXPOSE 3000
 
 # Default command
-CMD ["npm", "start"]
+CMD ["node", "server.js"]
+
+
+
+
+
+
