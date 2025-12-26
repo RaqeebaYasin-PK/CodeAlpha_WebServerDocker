@@ -50,7 +50,7 @@ Open in browser:
 
 http://localhost:3000
 
-##Docker Usage
+Docker Usage
 Build the Docker Image
 docker build -t webserver‑advanced .
 
@@ -63,7 +63,7 @@ Container will serve the app on:
 http://localhost:3000
 
 
-##What it Does
+What it Does
 
 Dockerfile uses node:18 as base image
 
@@ -75,7 +75,7 @@ Exposes port 3000
 
 Runs server inside container
 
-##Key Concepts Learned
+Key Concepts Learned
 
 Images: Layered blueprint containing application and runtime
 
@@ -92,7 +92,7 @@ Example Endpoints
 
 /api — JSON response (demo/test)
 
-##Future Enhancements
+Future Enhancements
 
 Add test cases (e.g., using Jest)
 
@@ -100,7 +100,7 @@ Publish the Docker image to Docker Hub
 
 Add GitHub Actions CI workflow
 
-##Author
+###Author
 
 Raqeeba Yasin
 GitHub: https://github.com/RaqeebaYasin-PK
