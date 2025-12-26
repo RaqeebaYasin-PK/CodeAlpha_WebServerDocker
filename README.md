@@ -100,7 +100,7 @@ Publish the Docker image to Docker Hub
 
 Add GitHub Actions CI workflow
 
-###Author
+Author
 
 Raqeeba Yasin
 GitHub: https://github.com/RaqeebaYasin-PK
