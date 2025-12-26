@@ -1,9 +1,17 @@
 # Task 4 — Web Server Using Docker  
 **CodeAlpha DevOps Internship Project**
 
-## Project Objective
+## Project Overview
 
-This project completes **Task 4: Web Server Using Docker**, focused on building, containerizing, and running a web server inside a Docker container. The goal was also to understand Docker fundamentals such as images, containers, port mapping, and container lifecycle.
+This project completes **Task 4: Web Server using Docker**, focusing on building, containerizing, and running a web server inside a Docker container. The main objectives were to:
+
+- Learn Docker containerization basics  
+- Deploy and manage a web server inside Docker containers  
+- Understand container lifecycle and commands  
+- Monitor container health and troubleshoot issues  
+- Explore container-based app deployment best practices  
+
+---
 
 ## Tech Stack
 
@@ -17,89 +25,114 @@ This project completes **Task 4: Web Server Using Docker**, focused on building,
 
 ## Project Structure
 
-├── server.js
-├── package.json
-├── package-lock.json
-└── Dockerfile
+server.js # Node.js web server
+package.json # Dependencies and scripts
+package-lock.json # Exact dependency versions
+Dockerfile # Docker container build instructions
 
-yaml
-Copy code
+
 
 ---
 
-## Getting Started
+## Prerequisites
 
-### Prerequisites
-
-Install:
-- Docker (Engine or Docker Desktop)
-- Git
+- Docker (Engine or Desktop)  
+- Git  
 
 Clone the repository:
 
-
 git clone https://github.com/RaqeebaYasin-PK/CodeAlpha_WebServerDocker.git
 cd CodeAlpha_WebServerDocker
-Running Locally (without Docker)
+
+
+
+---
+
+## Running Locally (Without Docker)
+
 Install dependencies:
 
-
-
 npm install
-Run the server:
 
+powershell
+
+
+Start the server:
 
 node server.js
-Visit in browser:
 
+
+
+Open your browser:
 
 http://localhost:3000
-Docker Usage
-Build Docker Image
 
 
+
+---
+
+## Docker Usage
+
+### Build Docker Image
 
 docker build -t webserver-advanced .
-Run Docker Container
 
+shell
+
+
+### Run Docker Container
 
 docker run -p 3000:3000 webserver-advanced
-You can access the app in the browser:
 
+
+
+Access the app:
 
 http://localhost:3000
-Endpoints
-Route	Description
-/	Serves static web page
-/api	Returns JSON API response
 
-Docker Concepts Covered
-Images – Layered blueprint of application + environment
 
-Containers – Isolated runtime instances
 
-Port Mapping – Exposing container ports to host
+---
 
-Build Context & Caching – Faster iterative builds
+## API Endpoints
 
-Learning Outcomes
-This project helped me understand:
+| Route  | Description                  |
+|--------|------------------------------|
+| `/`    | Serves static web page       |
+| `/api` | Returns JSON API response    |
 
-How to build and run a web server
+---
 
-Basics of Docker images and containers
+## Docker Concepts Covered
 
-Port mapping and container networking
+- **Images** – Layered blueprint containing app + environment  
+- **Containers** – Isolated runtime instances  
+- **Port Mapping** – Exposing container services to host machine  
+- **Build Context & Caching** – Efficient iterative builds  
 
-Creating reproducible container deployments
+---
 
-Future Enhancements
-Publish image on Docker Hub
+## Learning Outcomes
 
-Add automated CI/CD pipeline
+By completing this project, I gained practical experience in:
 
-Add unit tests for API endpoints
+- Building and running a web server  
+- Containerizing applications with Docker  
+- Mapping ports and networking containers  
+- Creating reproducible, environment-independent deployments  
 
-Author
-Raqeeba Yasin
-GitHub: https://github.com/RaqeebaYasin-PK
+---
+
+## Future Enhancements
+
+- Publish Docker image to Docker Hub  
+- Add automated CI/CD pipeline (GitHub Actions)  
+- Include unit tests for API endpoints  
+- Add monitoring for container health  
+
+---
+
+## Author
+
+**Raqeeba Yasin**  
+GitHub: [https://github.com/RaqeebaYasin-PK](https://github.com/RaqeebaYasin-PK)
