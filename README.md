@@ -37,38 +37,36 @@ Install:
 
 Clone the repository:
 
-```bash
+
 git clone https://github.com/RaqeebaYasin-PK/CodeAlpha_WebServerDocker.git
 cd CodeAlpha_WebServerDocker
 Running Locally (without Docker)
 Install dependencies:
 
-bash
-Copy code
+
+
 npm install
 Run the server:
 
-bash
-Copy code
+
 node server.js
 Visit in browser:
 
-arduino
-Copy code
+
 http://localhost:3000
 Docker Usage
 Build Docker Image
-bash
-Copy code
+
+
+
 docker build -t webserver-advanced .
 Run Docker Container
-bash
-Copy code
+
+
 docker run -p 3000:3000 webserver-advanced
 You can access the app in the browser:
 
-arduino
-Copy code
+
 http://localhost:3000
 Endpoints
 Route	Description
